@@ -44,7 +44,7 @@ var server = http.createServer(function(req,res){
         res.writeHead(statusCode);
         res.end(payloadString);
 
-        // Log Success message to console
+        // Log Success or Error message to console
 
         statusCode == 404 ? console.log('Not found : 404 error code') : console.log('Returned welcome message!');
 
